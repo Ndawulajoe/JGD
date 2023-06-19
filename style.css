@@ -1,0 +1,212 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* .container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+} */
+.pages{
+    display: flex;
+    justify-content:space-around;
+}
+.back-page,.flont-page{
+    border: 4px solid;
+    width: 48%;
+    height: 100vh;
+    box-shadow:  5px 10px 8px 10px #888888;
+ 
+}
+
+.heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 40px;
+}
+
+.subheading {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.icon-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.icon-container i {
+    font-size: 20px;
+    color: tomato;
+}
+
+.icon-container p {
+    font-size: 16px;
+    margin-top:3px ;
+    /* margin: 0; */
+}
+.back-page{
+    background: linear-gradient(352deg, rgba(236, 66, 5, 1) 0%, rgba(231, 104, 104, 1) 38%);
+    overflow: hidden;
+    position:relative;
+    top: 0;
+}
+/* .screen-background { */
+    
+    /* border: 1px solid tomato;// */
+    /* position:relative; */
+    /* left: 20%; */
+    /* width: 759px; */
+    /* height: 100vh; */
+    /* overflow: hidden; */
+    /* z-index: 2; */
+/* } */
+
+.tab-screen {
+    border: 7px solid black;
+    background: linear-gradient(to bottom right, #ffcc00 0%, #ff6600 100%);
+    width: 60%;
+    height: 50vh;
+    position:absolute; 
+    top: 32%;/* Set .tab-screen as a relative positioned container */
+    right: 30%;
+    /* margin: 0 auto;  */
+    overflow: hidden;
+}
+
+.first-sun {
+    background: radial-gradient(circle, rgba(255, 248, 0, 1) 0%, rgba(255, 102, 0, 1) 100%);
+    width: 60%;
+    height: 70%;
+    position: absolute; /* Position .first relative to .tab-screen */
+    border-radius: 50%;
+    top: -90px; /* Adjust the distance of .first from the top */
+    left: 50px; /* Adjust the distance of .first from the left */
+    z-index: 1; /* Ensure .first appears above .tab-screen border */
+    transform: rotate(50deg); /* Rotate .first element for a visually pleasing effect */
+}
+
+.second-sun {
+    background: radial-gradient(circle, rgba(255, 248, 0, 1) 0%, rgba(255, 102, 0, 1) 100%);
+    width: 60%;
+    height: 80%;
+    position: absolute; /* Position .second-sun relative to .tab-screen */
+    border-radius: 50%;
+    top: 100px;
+    left: 60%;
+    /* z-index: 1; */
+    /* transform: rotate(-30deg) */
+    transform: translate(5%, 5%)
+}
+
+.tab-page {
+    /* border: 1px solid black; */
+    width: 60%;
+    height: 300px;
+    border-radius: 10px;
+    background-color: white;
+    position: absolute; /* Position .tab-page relative to .tab-screen */
+   
+    z-index: 2; /* Ensure .tab-page appears above .tab-screen */
+    overflow: hidden;
+    /* overflow-X: hidden; */
+}
+header{
+    background-color: black;
+    padding: 20px;
+}
+.colors{
+    display: flex;
+    /* justify-content: space-between; */
+    
+}
+.red{
+    
+    margin-right: 10px;
+    background-color: red;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+}
+.orange{
+    margin-right: 10px;
+    background-color: #ffcc00;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+}
+.green{
+    background-color: greenyellow;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+}
+.side-content{
+    background-color:aliceblue;
+    
+    width: 40%;
+    height: 50vh;
+}
+.content{
+    display: block;
+    position:absolute;
+    top: 80px;
+}
+.first-line{
+background-color: black;
+border-radius: 5px;
+width: 40%;
+height: 1vh;
+margin-top: 10px;
+margin-left: 15px;
+}
+.second-line{
+    background-color: black;
+    border-radius: 5px;
+    width: 40%;
+height: 1vh;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+.third-line{
+    background-color: black;
+    border-radius: 5px;
+    width: 40%;
+height: 1vh;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+.fouth-line{
+    background-color: black;
+    border-radius: 5px;
+    width: 60px;
+    height: 5px;
+    /* ~ */
+}
+.first-page-content{
+    background-color:wheat;
+    width: 250px;
+    height: 30vh;
+    border: 1px solid;
+    position: absolute;
+    top: 20px;
+    left: 500px;
+    z-index: 2;
+}
+/* @media only screen and (max-width: 600px){
+    .first-page-content{
+        background-color:green;
+        width: 20px;
+        height: 30vh;
+        border: 1px solid;
+        position: absolute;
+        top: 30px;
+        left: 31px;
+        z-index: 2;
+    }
+} */
